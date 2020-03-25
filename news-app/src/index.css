@@ -2,21 +2,27 @@
 /* body of the website */
 /* ******************* */
 body {
-  background-color: black;
+  background-color: white;
   text-align: center;
+  color: black;
 }
 
 /* ************************************ */
 /* aligns pic of card on top correctly */
 /* ********************************** */
+
+
 .card-img-top {
-  height: 16rem;
-  display: inline-flex;
+  /* height: 16rem;
+  display: inline-flex; */
+  background-image: ('/images/default.jpg');
 }
 
 /* ****************************** */
 /* each individual card layout */
 /* ****************************** */
+
+
 .card {
   max-width: 350px;
   display: inline-flex;
@@ -24,3 +30,28 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+/* ************************ */
+/* Whole card body stretch */
+/* *********************** */
+.card-body {
+  height: 11rem;
+
+}
+
+/* *********************** */
+/* Article title on card */
+/* ********************** */
+
+.card-title {
+  font-size: small;
+  font-weight: bold;
+}
+
+/* ********************** */
+/* Authors name on card */
+/* ********************* */
+.card-text {
+  font-size: small;
+}
+
