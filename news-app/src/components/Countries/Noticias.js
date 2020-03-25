@@ -31,7 +31,7 @@ const Noticias = ({ item }) => (
 <Fragment>
 <div className="card">
                 <img
-                  src={item.urlToImage} onError="this.src='/images/default.jpg';" 
+                  src={item.urlToImage}
                   className="card-img-top"
                   alt="Article Picture"
                   

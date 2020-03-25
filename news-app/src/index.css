@@ -13,8 +13,8 @@ body {
 
 
 .card-img-top {
-  /* height: 16rem;
-  display: inline-flex; */
+  height: 16rem;
+  display: inline-flex;
   background-image: ('/Users/Philip/SEI/news-app-improve/news-app/src/images/default.jpg');
 }
 
