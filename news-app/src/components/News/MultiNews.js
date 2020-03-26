@@ -7,6 +7,9 @@ class MultiNews extends Component {
     this.state = {
       usa: [],
       colombiaNews: []
+
+   
+
     };
   }
 
@@ -54,6 +57,9 @@ class MultiNews extends Component {
   }
 
   render() {
+
+    
+
     return (
       <div className="row">
         {this.renderItems()}
