@@ -11,12 +11,14 @@ class MultiNews extends Component {
   }
 
   componentDidMount() {
+    const papi = process.env.REACT_APP_LA_CLAVE;
+   
     const url =
-      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=63f2a4bf5bdd42b3bf1f0851aa78b335";
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=" + papi;
 
     const colombia =
-      "http://newsapi.org/v2/top-headlines?country=co&apiKey=63f2a4bf5bdd42b3bf1f0851aa78b335";
-     
+      "http://newsapi.org/v2/top-headlines?country=co&apiKey=" + papi;
+    
 
     fetch(url)
       .then(res => {
