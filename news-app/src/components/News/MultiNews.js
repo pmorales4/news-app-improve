@@ -11,10 +11,12 @@ class MultiNews extends Component {
   }
 
   componentDidMount() {
-    const url = 'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=63f2a4bf5bdd42b3bf1f0851aa78b335';
+    const url =
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=63f2a4bf5bdd42b3bf1f0851aa78b335";
 
     const colombia =
       "http://newsapi.org/v2/top-headlines?country=co&apiKey=63f2a4bf5bdd42b3bf1f0851aa78b335";
+     
 
     fetch(url)
       .then(res => {
@@ -53,7 +55,7 @@ class MultiNews extends Component {
     return (
       <div className="row">
         {this.renderItems()}
-       {this.getColombia()}
+        {this.getColombia()}
       </div>
     );
   }
