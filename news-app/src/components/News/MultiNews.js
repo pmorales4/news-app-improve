@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Noticias from "../Countries/Noticias";
+import Noticias2 from "../Countries/Noticias2";
 
 class MultiNews extends Component {
   constructor(props) {
     super(props);
     this.state = {
       usa: [],
-      colombiaNews: []
-      
+      colombiaNews: [],
+      mexicoNews: []
     };
   }
 
@@ -20,6 +21,7 @@ class MultiNews extends Component {
     const colombia =
       "http://newsapi.org/v2/top-headlines?country=co&apiKey=" + papi;
     
+      const mexico = "http://newsapi.org/v2/top-headlines?country=mx&apiKey=" + papi
 
     fetch(url)
       .then(res => {
@@ -27,7 +29,7 @@ class MultiNews extends Component {
       })
       .then(data => {
         this.setState({
-          usa: data.articles
+          usa: data.articles.slice(0, 6)
         });
       })
       .catch(err => console.log(err));
@@ -38,10 +40,28 @@ class MultiNews extends Component {
       })
       .then(co => {
         this.setState({
-          colombiaNews: co.articles
+          colombiaNews: co.articles.slice(0, 6)
         });
       })
       .catch(err => console.log(err));
+
+
+      fetch(mexico)
+      .then(res => {
+        return res.json();
+      })
+      .then(mx => {
+        this.setState({
+          mexicoNews: mx.articles.slice(0, 6)
+        });
+      })
+      .catch(err => console.log(err));
+
+
+
+
+
+
   }
 
   renderItems() {
@@ -53,13 +73,19 @@ class MultiNews extends Component {
       <Noticias key={item.url} item={item} />
     ));
   }
+  getMexico() {
+    return this.state.mexicoNews.map(item => (
+      <Noticias2 key={item.url} item={item} />
+    ));
+  }
+
 
   render() {
     return (
       <div className="row">
         {this.renderItems()}
         {this.getColombia()}
-       
+        {this.getMexico()}
       </div>
       
     );

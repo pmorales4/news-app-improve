@@ -60,9 +60,14 @@ body {
   margin: auto;
 }
 
-/* @media (max-width: 900px) {
-  .carousel-inner > img {
-    width:auto;
-    height:auto;
+/* @media (max-width: 200px) {
+  #sm-pic > img {
+    width:200;
+    height:200;
   }
 } */
+
+#sm-pic {
+  width:600px;
+  height:300px;
+}

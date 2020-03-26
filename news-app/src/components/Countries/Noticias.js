@@ -1,8 +1,5 @@
 import React, { Fragment } from "react";
 
-
-
-
 const Noticias = ({ item }) => (
 
 <Fragment>
@@ -24,8 +21,6 @@ const Noticias = ({ item }) => (
                   </a>
                 </div>
               </div>
-
-
 </Fragment>
 
 );
