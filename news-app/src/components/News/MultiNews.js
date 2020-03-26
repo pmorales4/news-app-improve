@@ -7,9 +7,7 @@ class MultiNews extends Component {
     this.state = {
       usa: [],
       colombiaNews: []
-
-   
-
+      
     };
   }
 
@@ -29,7 +27,7 @@ class MultiNews extends Component {
       })
       .then(data => {
         this.setState({
-          usa: data.articles.slice(0, 6)
+          usa: data.articles
         });
       })
       .catch(err => console.log(err));
@@ -40,7 +38,7 @@ class MultiNews extends Component {
       })
       .then(co => {
         this.setState({
-          colombiaNews: co.articles.slice(0, 6)
+          colombiaNews: co.articles
         });
       })
       .catch(err => console.log(err));
@@ -57,14 +55,13 @@ class MultiNews extends Component {
   }
 
   render() {
-
-    
-
     return (
       <div className="row">
         {this.renderItems()}
         {this.getColombia()}
+       
       </div>
+      
     );
   }
 }

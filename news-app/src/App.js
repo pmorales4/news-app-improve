@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import Main from "./components/News/Main";
-
+import Main from "./components/Main/Main";
+import BannerAPP from "./components/banner/BannerAPP";
 
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">News API Application</h1>
+          <BannerAPP />
         </header>
         <Main />
       </div>

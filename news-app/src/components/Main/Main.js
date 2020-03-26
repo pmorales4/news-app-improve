@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import MultiNews from "./MultiNews";
+import MultiNews from "../News/MultiNews";
+
 
 class Main extends Component {
   render() {

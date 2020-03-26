@@ -4,7 +4,6 @@
 body {
   background-color: white;
   text-align: center;
-  color: black;
 }
 
 /* ************************************ */
@@ -15,7 +14,8 @@ body {
 .card-img-top {
   height: 16rem;
   display: inline-flex;
-  background-image: ('/Users/Philip/SEI/news-app-improve/news-app/src/images/default.jpg');
+  background-image: url('https://i.imgur.com/WAcyFoO.jpg');
+  
 }
 
 /* ****************************** */
@@ -55,3 +55,14 @@ body {
   font-size: small;
 }
 
+.carousel-inner, .carousel-item.active {
+  align-items: center;
+  margin: auto;
+}
+
+/* @media (max-width: 900px) {
+  .carousel-inner > img {
+    width:auto;
+    height:auto;
+  }
+} */
