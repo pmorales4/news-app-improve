@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Noticias2 from "../Countries/Noticias2";
+import NoticiasPush2 from "../Countries/NoticiasPush2";
 
 class SidebarNews extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class SidebarNews extends Component {
       })
       .then(mx => {
         this.setState({
-          mexicoNews: mx.articles.slice(0, 6)
+          mexicoNews: mx.articles.slice(0, 11)
         });
       })
       .catch(err => console.log(err));
@@ -27,7 +27,7 @@ class SidebarNews extends Component {
 
   getMexico() {
     return this.state.mexicoNews.map(item => (
-      <Noticias2 key={item.url} item={item} />
+      <NoticiasPush2 key={item.url} item={item} />
     ));
   }
 

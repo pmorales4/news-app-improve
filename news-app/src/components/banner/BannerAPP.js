@@ -22,7 +22,7 @@ class BannerApp extends Component {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://i.imgur.com/9P2Zcxi.jpg"
+                src="https://i.imgur.com/UK3FOAz.jpg"
                 class="d-block w-100"
                 alt="banner"
               />
@@ -34,7 +34,7 @@ class BannerApp extends Component {
 
             <div className="carousel-item">
               <img
-                src="https://i.imgur.com/O6Xbaon.jpg"
+                src="https://i.imgur.com/KDbr5X1.jpg"
                 className="d-block w-100"
                 alt="..."
               />
@@ -46,7 +46,7 @@ class BannerApp extends Component {
 
             <div className="carousel-item">
               <img
-                src="https://i.imgur.com/jgiGg1s.jpg"
+                src="https://i.imgur.com/en96Pdd.jpg"
                 class="d-block w-100"
                 alt="..."
               />

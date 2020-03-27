@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Noticias from "../Countries/Noticias";
+import NoticiasPush1 from "../Countries/NoticiasPush1";
 
 
 class MultiNews extends Component {
@@ -29,7 +29,7 @@ class MultiNews extends Component {
       })
       .then(data => {
         this.setState({
-          usa: data.articles.slice(0, 6)
+          usa: data.articles.slice(0, 8)
         });
       })
       .catch(err => console.log(err));
@@ -40,7 +40,7 @@ class MultiNews extends Component {
       })
       .then(co => {
         this.setState({
-          colombiaNews: co.articles.slice(0, 6)
+          colombiaNews: co.articles.slice(0, 8)
         });
       })
       .catch(err => console.log(err));
@@ -54,12 +54,12 @@ class MultiNews extends Component {
   }
 
   renderItems() {
-    return this.state.usa.map(item => <Noticias key={item.url} item={item} />);
+    return this.state.usa.map(item => <NoticiasPush1 key={item.url} item={item} />);
   }
 
   getColombia() {
     return this.state.colombiaNews.map(item => (
-      <Noticias key={item.url} item={item} />
+      <NoticiasPush1 key={item.url} item={item} />
       
     ));
   }

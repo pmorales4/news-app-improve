@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-      <header className="App-header">
+    
       <BannerAPP />
-    </header>
+  
       <div className="container">
         <div class="row row-cols-2">
          

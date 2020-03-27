@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 const Noticias = ({ item }) => (
-  <Fragment>
+  <Fragment className='card-full'>
     <div className="card">
       <img
         className="card-img-top"
