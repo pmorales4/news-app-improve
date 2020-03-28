@@ -35,6 +35,7 @@ body {
   margin-bottom: 1rem;
   margin-left: 0rem;
   margin-right: 1rem;
+  background-color: white;
  
 } 
 
@@ -87,3 +88,23 @@ body {
   color: white;
 }
 
+.btn-primary {
+	background-color: #20c997;
+	border-color:#20c997;
+}
+
+.title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background-color: #20c997;
+}
+
+h6 {
+  font-size: smaller;
+}
+
+.fav {
+  padding-right: 3rem;
+  
+  
+}
